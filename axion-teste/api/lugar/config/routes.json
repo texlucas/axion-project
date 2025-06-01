@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lugars",
+      "handler": "lugar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lugars/count",
+      "handler": "lugar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lugars/:id",
+      "handler": "lugar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lugars",
+      "handler": "lugar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lugars/:id",
+      "handler": "lugar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lugars/:id",
+      "handler": "lugar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

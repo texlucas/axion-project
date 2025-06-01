@@ -1,0 +1,40 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Strapi
+.cache/
+build/
+dist/
+tmp/
+.env
+.env.*.local
+public/uploads/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Logs
+logs/
+*.log
+
+# Teste e cobertura
+coverage/
+jest-test-results.json
+
+# Outros
+*.tgz
