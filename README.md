@@ -73,6 +73,7 @@ Use as credenciais abaixo para acessar a aplicação:
 - Cards dinâmicos com imagem e nome
 - Responsividade e fidelidade visual ao layout
 - Ordenação crescente/decrescente (sugestão extra)
+- Proteção de rotas
   
 ---
 
