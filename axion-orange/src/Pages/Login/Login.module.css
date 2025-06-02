@@ -27,15 +27,15 @@
 }
 
 .formContainer{
-    width: 430px;
-    height: 746px;
+    width: 26.875rem;
+    height: 46.625rem;
     margin-left: 200px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px;
+    padding: 2.5rem;
     background-color: #FFFFFF;
     z-index: 2;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -125,4 +125,86 @@
 
 .createAccountButton:hover{
     cursor: pointer;
+}
+
+.inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:row;
+    width: 100%;
+    align-self:center;
+    color: #4A4A4A;
+}
+
+@media (max-width: 440px) {
+    .container{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .backgroundImage{
+        display: none;
+    }
+
+    .formContainerContainer{
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .formContainer{
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    button{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .inputContainer{
+        width: 100%;
+    }
+
+    .backgroundImage{
+        display: none;
+    }
+
+    .submitButton{
+        margin: 0;
+        width: 80%;
+    }
+
+    .createAccountButton{
+        margin: 0;
+        width: 80%;
+    }
+
+    .inline{
+        width: 80%;
+        gap: 1rem;
+    }
+
+    form{
+        align-items: center;
+    }
+
+    .logo{
+        margin-bottom: 2rem;
+    }
 }

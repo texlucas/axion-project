@@ -30,6 +30,7 @@ const Login = () => {
 
             if (response.ok && data.jwt) {
                 localStorage.setItem('token', data.jwt);
+                localStorage.setItem('user', JSON.stringify(data.user));
                 return data;
             } else {
                 console.error('Erro no login:', data.message || data);
@@ -108,7 +109,7 @@ const Login = () => {
                         <button className={style.loginTrouble} onClick={() =>{}}>Problemas para acessar sua conta?</button>
                         <button type="submit" className={style.submitButton} onClick={handleSubmit}>Acessar</button>
                     </form>
-                    <div style={ { display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection:'row', width: '100%', alignSelf:'center', color: '#4A4A4A' } }>
+                    <div className={style.inline}>
                         <div style={{height: '2px', backgroundColor: '#909090', width: '200px'}}></div> <div style={{textAlign: 'center'}}>ou</div> <div style={{height: '2px', backgroundColor: '#909090', width: '200px'}}></div>
                     </div>
                     <button className={style.createAccountButton}>Cadastrar</button>
